@@ -18,6 +18,15 @@
 						$("li[data-type]:visible:last>div>div").addClass("uk-padding-remove-bottom");
 					}, 500);
 				});
+				$('.hiddenMail').on('click',function(event)
+			    {
+			        event.preventDefault();
+			        $(this).off("click");
+			        var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.').replace(/DOT/,'.');
+			        $(this).removeClass("hiddenMail");
+			        $(this).html(email);
+			        $(this).attr("href","mailto:"+email);
+			    });
 			});
 		</script>
 	</head>
@@ -38,14 +47,15 @@
 					<div class="uk-child-width-1-1"  uk-grid>
 						<div class="uk-width-expand@s">
 							<h2 id="about" class="uk-heading-divider title-link"><a href="#about">About me</a></h2>
-							<p><span class="uk-text-primary uk-text-bold">Game Programmer</span> specialized in (but not limited to) <span class="uk-text-primary uk-text-bold">games made with Unity3D</span>.<br><br>Experienced in online and often resource-limited platforms such as <span class="uk-text-primary uk-text-bold">iOS, Android, and XR</span>.  Engineering and communications work background in Japan. <br><br>Native English speaker and proficient in business-level Japanese</p>
+							<p><span class="uk-text-primary uk-text-bold">Game Programmer</span> specialized in (but not limited to) games made with  <span class="uk-text-primary uk-text-bold">Unity3D</span>.</p><p>Experienced building online and often resource-limited platforms such as <span class="uk-text-primary uk-text-bold">iOS</span>, <span class="uk-text-primary uk-text-bold">Android</span>, and <span class="uk-text-primary uk-text-bold">XR</span> games/apps targeted for both consumers and business.</p><p>Engineering and communications work background in Japan.</p><p>Native English speaker and proficient in Japanese</p>
 						</div>
 						<div class="width-contacts">
 							<h2 id="contacts" class="uk-heading-divider title-link"><a href="#contacts">Contacts</a></h2>
 							<div class="uk-grid-row-small uk-child-width-1-1" uk-grid>
 								<div class="uk-grid-small@s uk-child-width-auto uk-child-width-1-1@l uk-grid-row-collapse uk-flex-center uk-flex-left@s" uk-grid="masonry: true">
 									<div class="">
-										<span class="uk-margin-small-right" uk-icon="mailbox"></span><a href="mailto:hello.jonbro@gmail.com" target="_blank"><span>hello.jonbro@gmail.com</span></a>
+										<span class="uk-margin-small-right" uk-icon="mailbox"></span><a class="hiddenMail" data-email="helloDOTjonbroATgmailDOTcom">Click once to reveal
+</a>
 									</div>
 									<div class="">
 										<span class="uk-margin-small-right" uk-icon="twitter"></span><a class="uk-text-middle" href="https://twitter.com/J_A_Bro" target="_blank"><span>@J_A_Bro</span></a>
@@ -216,9 +226,6 @@
 																</span>
 															</h3>
 														</div>
-														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
 													<div class="uk-margin-small-top">
@@ -238,9 +245,6 @@
 										<div><span uk-icon="icon: amazon; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>May 2021 - June 2021</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
-										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-										</ul>
 									</div>
 									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
@@ -255,9 +259,6 @@
 																</span>
 															</h3>
 														</div>
-														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
 													<div class="uk-margin-small-top">
@@ -294,9 +295,6 @@
 																</span>
 															</h3>
 														</div>
-														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
 													<div class="uk-margin-small-top">
@@ -316,9 +314,6 @@
 										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>July 2020 - Aug 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
-										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-										</ul>
 									</div>
 									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
@@ -341,7 +336,6 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
@@ -376,7 +370,6 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
@@ -411,7 +404,6 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
@@ -437,9 +429,6 @@
 																</span>
 															</h3>
 														</div>
-														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
 													<div class="uk-margin-small-top"><i>Lead Front-End Developer</i><br>
@@ -475,7 +464,7 @@
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Utility App</h4></div>
 													<div class="uk-margin-small-top"><i>Lead Developer</i><br>
-														- Developed app that recreates a virtual environment based on QR codes placed in the world.<br>- Created algorithms for procedurally generating 3D meshes from a proprietary format for the virtual environment. Featured the Vuforia plugin for tracking Android device location.
+														- Developed app that recreates a virtual environment based on QR codes placed in the world<br>- Created algorithms for procedurally generating 3D meshes from a proprietary format for the virtual environment. Used the Vuforia plugin for orienting Android device
 													</div>
 												</div>
 											</div>
@@ -507,7 +496,7 @@
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Real-time Multiplayer Social Game</h4></div>
 													<div class="uk-margin-small-top"><i>Battle Screen Developer</i><br><p>
-														Novel social game where players compete for territory based on real world maps where the player resides. </p><p>Developed front-end battle screen featuring client-side prediction and server reconciliation.</p><p>Features UniRx and UniTask libraries for reactive programming and MessagePack for client-server communication.</p>
+														Novel social game where players compete for territory based on real world maps where the player resides. </p><p>Developed front-end battle screen featuring client-side prediction and server reconciliation with behaviour tree driven AI enemies.</p><p>Features UniRx and UniTask libraries for reactive and asynchronous programming and MessagePack for client-server communication.</p>
 													</div>
 												</div>
 											</div>
@@ -624,9 +613,6 @@
 										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Jan 2015 - Feb 2015</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
-										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-										</ul>
 									</div>
 									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
@@ -675,11 +661,12 @@
 														</div>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Field Service Engineer</h4></div>
-													<div class="uk-margin-small-top">- Promoted to field service manager of Japan<br>- Diagnose and repair Electrical Failure Analysis (EFA) systems domestically 
-and internationally
+													<div class="uk-margin-small-top">- Promoted to field service manager of Japan<br>- Specialized in diagnosis and repair of 200mm/300mm wafer analysis Electrical Failure Analysis (EFA) systems domestically 
+and internationally within Asia
 													</div>
 												</div>
 											</div>
+											<div><img data-src="./img/projects/dcg/wafer.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
@@ -690,9 +677,6 @@ and internationally
 									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div class="uk-margin-small-top uk-text-break"><h4>Oct 2007 - May 2010</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
-										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
-										</ul>
 									</div>
 									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
