@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jonathan Bro Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("li[data-type]:visible:last>div>div").addClass("uk-padding-remove-bottom");
+				$(".uk-filter a").click(function(){
+					$("li[data-type]>div>div").removeClass("uk-padding-remove-bottom");
+					setTimeout(function (){
+						$("li[data-type]:visible:last>div>div").addClass("uk-padding-remove-bottom");
+					}, 500);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div align="center">
+			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom uk-position-relative">
+				<div class="uk-width-1-1 uk-width-2xlarge@s uk-position-relative" style="padding: 0 15px;">
+					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
+						<h1>Jonathan Bro</h1>
+						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+					</header>
+					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
+				</div>
+			</div>
+				
+			<main class="uk-width-1-1 uk-width-3xlarge@s uk-text-left uk-grid-large uk-child-width-1-1" uk-grid>
+				<section>
+					<div class="uk-child-width-1-1"  uk-grid>
+						<div class="uk-width-expand@s">
+							<h2 id="about" class="uk-heading-divider title-link"><a href="#about">About me</a></h2>
+							<p><span class="uk-text-primary uk-text-bold">Game Programmer</span> specialized in (but not limited to) <span class="uk-text-primary uk-text-bold">games made with Unity3D</span>.<br><br>Experienced in online and often resource-limited platforms such as <span class="uk-text-primary uk-text-bold">iOS, Android, and XR</span>.  Engineering and communications work background in Japan. <br><br>Native English speaker and proficient in business-level Japanese</p>
+						</div>
+						<div class="width-contacts">
+							<h2 id="contacts" class="uk-heading-divider title-link"><a href="#contacts">Contacts</a></h2>
+							<div class="uk-grid-row-small uk-child-width-1-1" uk-grid>
+								<div class="uk-grid-small@s uk-child-width-auto uk-child-width-1-1@l uk-grid-row-collapse uk-flex-center uk-flex-left@s" uk-grid="masonry: true">
+									<div class="">
+										<span class="uk-margin-small-right" uk-icon="mailbox"></span><a href="mailto:hello.jonbro@gmail.com" target="_blank"><span>hello.jonbro@gmail.com</span></a>
+									</div>
+									<div class="">
+										<span class="uk-margin-small-right" uk-icon="twitter"></span><a class="uk-text-middle" href="https://twitter.com/J_A_Bro" target="_blank"><span>@J_A_Bro</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 id="skills" class="uk-heading-divider title-link"><a href="#skills">Skills</a></h2>
+					<div class="uk-grid-divider uk-flex-left uk-grid-column-small uk-grid-row-small uk-text-left uk-child-width-1-1" uk-grid>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Languages</span></h4></div></div>
+							<div class="uk-width-expand uk-grid-medium" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: csharp; ratio: 1.5"></span>
+									<span class="uk-text-middle">C#</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: typescript; ratio: 1.5"></span>
+									<span class="uk-text-middle">TypeScript</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: cplusplus; ratio: 1.5"></span>
+									<span class="uk-text-middle">C++</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: dart; ratio: 1.5"></span>
+									<span class="uk-text-middle">Dart</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: golang; ratio: 1.5"></span>
+									<span class="uk-text-middle">Go</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: swift; ratio: 1.5"></span>
+									<span class="uk-text-middle">Swift</span>
+								</div>
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Platforms</span></h4></div></div>
+							<div class="uk-width-expand uk-grid-medium" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: iphone; ratio: 1.5"></span>
+									<span class="uk-text-middle">iOS</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: android; ratio: 1.5"></span>
+									<span class="uk-text-middle">Android</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: html5; ratio: 1.5"></span>
+									<span class="uk-text-middle">HTML5</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: amazon; ratio: 1.5"></span>
+									<span class="uk-text-middle">Amazon TV</span>
+								</div>
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Engines</span></h4></div></div>
+							<div class="uk-width-expand uk-grid-medium" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: unity; ratio: 1.5"></span>
+									<span class="uk-text-middle">Unity 3D</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: html5; ratio: 1.5"></span>
+									<span class="uk-text-middle">Phaser 3</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: flutter; ratio: 1.5"></span>
+									<span class="uk-text-middle">Flutter</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: unreal; ratio: 1.5"></span>
+									<span class="uk-text-middle">Unreal Engine</span>
+								</div>
+							</div>
+						</div>
+						<div class="uk-grid-column-medium" uk-grid>
+							<div class="uk-width-small uk-flex uk-flex-middle"><div><h4 class="uk-text-uppercase uk-margin-remove"><span>Tools</span></h4></div></div>
+							<div class="uk-width-expand uk-grid-medium" uk-grid>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: git; ratio: 1.5"></span>
+									<span class="uk-text-middle">Git</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: unity; ratio: 1.5"></span>
+									<span class="uk-text-middle">Unity Cloud</span>
+								</div>
+								<div>
+									<span class="uk-margin-small-right" uk-icon="icon: firebase; ratio: 1.5"></span>
+									<span class="uk-text-middle">Firebase</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 id="history" class="uk-heading-divider title-link"><a href="#history">History</a></h2>
+					<div class="uk-filter" uk-filter="target: .js-filter; animation: delayed-fade;">
+						<div class="uk-grid-small uk-grid-divider uk-child-width-auto uk-flex-center" uk-grid>
+							<div>
+								<ul class="uk-subnav uk-subnav-pill" uk-margin>
+									<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+									<li uk-filter-control="filter: [data-type='game']; group: data-type"><a href="#">Game</a></li>
+									<li uk-filter-control="filter: [data-type='app']; group: data-type"><a href="#">App</a></li>
+									<li uk-filter-control="filter: [data-type='education']; group: data-type"><a href="#">Education</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="js-filter uk-child-width-1-1" uk-grid>
+							<li data-type="game" data-date="2022-02-01">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2022 - Present</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span class="uk-position-relative">
+																	Word Dungeon (Tentative title)
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Hyper Casual Game</h4></div>
+													<div class="uk-margin-small-top">
+														Project collaboration with artist in creating a hyper casual game for learning English words.<br><br>Game includes firebase analytics, crashlytics, In-App-Purchases, and Unity Ads.
+													</div>
+													<div class="uk-margin-small-top uk-text-left uk-grid-column-small" uk-grid>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<p></p>
+							<li data-type="game" data-date="2019-06">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: amazon; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Dec 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/oath.html" target="_blank">Math Ninja (Multiplication)</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
+													<div class="uk-margin-small-top">
+														<p>Port of Math Ninja - Multiplication Table to Amazon TV.<p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/multiplication/header.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<p></p>
+							<li data-type="game" data-date="2019-06">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: amazon; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2021 - June 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/oath.html" target="_blank">Math Ninja (Addition/Subtraction)</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
+													<div class="uk-margin-small-top">
+														<p>Port of Math Ninja - Addition to Amazon TV</p><p>Main challenge was converting touch controls to a remote controller input scheme.</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/plusminus/header.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<p></p>
+							<li data-type="game" data-date="2019-06">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2020 - Dec 2020</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://youtu.be/4DMYMJi_7YU?t=164" uk-icon="icon: youtube; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/oath.html" target="_blank">Japanese Pirates</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
+													<div class="uk-margin-small-top">
+														<i>Lead Developer</i><br><p>Educational game for learning Japanese kanji (chinese characters). Players select progressively challenging islands each targeted for learning kanji based on grade level.</p><p>Each platform has both a free version with in-app subscriptions and a full-version with everything unlocked. Unity Cloud and Firebase used for ease of deployment, analytics, and bug reports.</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/japanese_pirates/header.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<p></p>
+							<li data-type="app" data-date="2020-08">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>July 2020 - Aug 2020</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	Parent Notification App
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Utility App</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Developer</i><br>
+														<p>Communication and notification utility app for parents and teachers. Parents can view school schedules and teachers can message parents via Firebase cloud messaging</p><p>Android version uses Android Studio + Kotlin<br>iOS version uses XCode + Swift5</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+							<li data-type="app" data-date="2020-07">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2020 - July 2020</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/teacher_companion.html" target="_blank">Teacher Companion Apps</a>
+																	<span class="uk-text-middle" uk-icon="icon: flutter; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Utility App</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Developer</i><br>
+														<p>One app is a teacher companion app for scanning student ID cards (using QR codes) and registering the time into a backend system.</p><p>The other app is also a teacher companion app but for downloading and scanning QR codes from learning material and displaying its answer sheet as a PDF.</p><p>Both apps were created with Flutter.</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+							<li data-type="game" data-date="2020-03">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.0"></span><span uk-icon="icon: iphone; ratio: 1.0"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Sep 2019 - Mar 2020</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/teacher_companion.html" target="_blank">Educational Games</a>
+																	<span class="uk-text-middle" uk-icon="icon: html5; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Developer</i><br><p>
+														Educational game teaching basic maths (addition, subtraction and multiplication) and languages</p><p>Games run inside a webview on smartphone devices using the Phaser 3 game engine.</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+
+							<li data-type="game" data-date="2019-10">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.0"></span><span uk-icon="icon: iphone; ratio: 1.0"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2019 - Oct 2019</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>Unannounced
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Education Game</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Front-End Developer</i><br>
+														Game where player travels on a 3d tile-based world to discover mini-games to play and advance the story.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+
+							<li data-type="app" data-date="2019-01">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2018 - Jan 2019</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>XR Visualization
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Utility App</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Developer</i><br>
+														- Developed app that recreates a virtual environment based on QR codes placed in the world.<br>- Created algorithms for procedurally generating 3D meshes from a proprietary format for the virtual environment. Featured the Vuforia plugin for tracking Android device location.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+<p></p>
+							<li data-type="game" data-date="2018-04">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.0"></span><span uk-icon="icon: iphone; ratio: 1.0"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2018 - Jan 2019</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>Territory Monsters
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Real-time Multiplayer Social Game</h4></div>
+													<div class="uk-margin-small-top"><i>Battle Screen Developer</i><br><p>
+														Novel social game where players compete for territory based on real world maps where the player resides. </p><p>Developed front-end battle screen featuring client-side prediction and server reconciliation.</p><p>Features UniRx and UniTask libraries for reactive programming and MessagePack for client-server communication.</p>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/territory_monsters/anim.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+<p></p>
+
+							<li data-type="game" data-date="2017-01">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.0"></span><span uk-icon="icon: iphone; ratio: 1.0"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2016 - Jan 2017</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>Griffon: The Mystic Tower
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Multiplayer Social Game</h4></div>
+													<div class="uk-margin-small-top">
+														<i>Post-release, Developer</i><br>- Developed UI for new content features<br>
+														- Created from the ground up enemy AI for tournament mode using behaviour trees
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/griffon/anim.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+
+
+							<li data-type="game" data-date="2015-11">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>May 2015 - Nov 2015</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>Unannounced
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Sports-themed Social Game</h4></div>
+													<div class="uk-margin-small-top"><i>Lead Front-End Developer</i><p>
+														3D sports game based on prominent anime IP. </p><p>In charge of overall project framework design and main game screen.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+
+							<li data-type="game" data-date="2015-11">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span><span uk-icon="icon: iphone; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2015 - April 2015</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/arcatype.html" target="_blank">Arcatype</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Tactics RPG Social Game</h4></div>
+													<div class="uk-margin-small-top"><i>Post-Release, Developer</i><br>Implemented upcoming multiplayer mode before game was put in end of service.
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/arcatype/anim.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+							<li data-type="game" data-date="2015-02">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Jan 2015 - Feb 2015</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	<a href="projects/dinosaur_time_capsule.html" target="_blank">Dinosaur Time Capsule</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">3D Action</h4></div>
+													<div class="uk-margin-small-top"><i>Developer</i><br>
+														3D action game where you pit dinosaurs against each other. Dinosaurs are first loaded by scanning NFC tokens with an Android phone and then made to battle against each other.</p><p>I was brought briefly on the project as a freelance programmer to help finish up the demo for an important milestone. My duties included programming the battles and handling the NFC token scanning functionality.
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/dinosaur_time_capsule/anim.gif" alt="" uk-img class="experience-image uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+<p></p>
+							<li data-type="other" data-date="2013-11">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div class="uk-margin-small-top uk-text-break"><h4>June 2010 - Nov 2013</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	DCG Systems
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Field Service Engineer</h4></div>
+													<div class="uk-margin-small-top">- Promoted to field service manager of Japan<br>- Diagnose and repair Electrical Failure Analysis (EFA) systems domestically 
+and internationally
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+<p></p>
+							<li data-type="other" data-date="2010-05">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div class="uk-margin-small-top uk-text-break"><h4>Oct 2007 - May 2010</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>
+																	Inventure
+																</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">LSI Hardware Engineer</h4>- Design, develop, and test for PCI Express, USB, OCP hardware specifications.<br>- ASIC / System on Chip design and verification<br>- Program FPGA using Verilog</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<p></p>
+							<li data-type="education" data-date="2006-12">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: book; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>2006</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://www.iisvaldagno.it/" uk-icon="icon: link; ratio: 1.25" target="_blank"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span>University of Memphis</span>
+															</h3>
+														</div>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">B.S. in Electrical Engineering & Computer Engineering</h4>Minors in Mathematics & Japanese Language</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2 id="interests" class="uk-heading-divider title-link"><a href="#interests">Interests</a></h2>
+					<div class="uk-grid-divider uk-flex-center uk-grid-small" uk-grid>
+						<div>
+							<span class="uk-icon" uk-icon="icon: game-console; ratio: 0.5"></span>
+							<span class="uk-text-middle">Videogames</span>
+						</div>
+						<div>
+							<span class="uk-icon" uk-icon="icon: tv; ratio: 0.5"></span>
+							<span class="uk-text-middle">Anime</span>
+						</div>
+						<div>
+							<span class="uk-icon" uk-icon="icon: book; ratio: 0.5"></span>
+							<span class="uk-text-middle">Books</span>
+						</div>
+						<div>
+							<span class="uk-icon" uk-icon="icon: planet; ratio: 0.5"></span>
+							<span class="uk-text-middle">Sci Fi</span>
+						</div>
+					</div>
+				</section>
+			</main>
+			
+			<div class="uk-width-1-1 uk-width-3xlarge@s">
+				<footer class="uk-margin-large-top uk-padding-small">
+					<div class="uk-text-central uk-child-width-1-1" uk-grid>
+						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
+							<div class="uk-text-left@s">
+								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+							</div>
+							<div class="uk-text-right@s">
+								Website design heavily influenced by Graizzaro Matteo
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
